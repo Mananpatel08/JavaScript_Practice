@@ -27,3 +27,43 @@ let myObj = {
 const myfinction = function(){
     console.log("Hello ji!");
 }
+
+
+
+// ===================================== Memory =====================================
+
+/*
+there is two type of memory
+
+1] stack ( store Primitive datatype)
+2] heap  ( store Non-Primitive datatype )
+
+all Primitive datatype store in stack and whenever you call it gives a copy of variable while 
+when you call value from heap it give you refrence of it
+
+ex:
+*/
+
+let myName = "Manan Patel"
+let myNickName = myName
+myNickName = "MP"
+
+// console.log(myName)                  // Manan Patel
+// console.log(myNickName)              // MP
+
+// it store value in stack beacuse it is primitive datatype
+// it not change myName original value because stack give only copy , that value is still save in stack
+
+let user1 = {
+    name : "Kevin",
+    age : 23,
+}
+
+let user2 = user1
+user2.name = "Chirag"
+
+// console.log(user1.name)         //Chirag
+// console.log(user2.name)         //Chirag
+
+// see here change both value from heap memory also change beacause it gives refrence 
+// that mean whatever you change it also change it's original value
