@@ -15,3 +15,14 @@ console.log(a)               // 100
 console.log(b)              // ReferenceError: b is not defined bcz you not define b outside if statement mean in global scope
 // console.log(c)
 
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+console.log(addNum(4))          // 5
+function addNum(num){
+    return num + 1
+}
+
+addTwo(4)                   // refrence error
+const addTwo = function(num){
+    return num + 2
+}
